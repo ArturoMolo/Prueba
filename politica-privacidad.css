@@ -1,0 +1,314 @@
+/*------------------------------------------ORDENADOR-------------------------------------------------*/
+*{
+    margin:0;
+    padding:0;
+    }
+    body{
+    background:#fff;
+    }
+
+    /*------------------------------------Editamos la barra del menú----------------------------------*/
+    header{
+        width:100%; /*Tanto en escritorio como en dispositivos móviles. a veces lo que no abarca el 100% es la etiqueta ul no el width del header*/
+    }
+    header nav{
+        max-width:1000px;
+        margin:1.25rem auto;
+        background:#000;
+        width:20%;/*Para que no ocupe toda la anchura de la ventana*/
+        height:100%;
+        margin:0;
+        position:fixed;
+        transition: left 1s; /*Sin esta propiedad el menú no se despliega en Github ap presionar el botón del menú hamburguesa*/
+        left:-21%; /*El menu desplegable se escuentra escondido en la izquierda nada mas entrar en la web*/
+    }
+    nav.active{ /*Sin esta propiedad el menú no se despliega en Github ap presionar el botón del menú hamburguesa*/
+        left: 0px;
+    }
+    header nav ul{
+        overflow:hidden;
+        list-style:none; /*Quitamos los puntitos*/
+    }
+    header nav ul li{
+        display:block; /*Cada elemento li ocupara todo el ancho que pueda*/
+        float:none; /*Antes tenía un float left y ahora no queremos que lo siga teniendo*/
+        border-bottom: 1px solid rgba(255, 255, 255, .3); /*Esto hace de hover. El .3 es la opacidad*/
+    }
+    header nav ul li a{
+        color:#fff;
+        padding:1.25rem; /*Espacio entre cada item del menú*/
+        display:block; /*Para que el padding haga efecto no solo en la izquierda y derecha sino también arriba y abajo*/
+        text-decoration:none; /*Quitamos los subrayados*/
+        transition:all 0.4s linear;
+    }
+    header nav ul li a:hover{
+        background:#ccc;
+        color:#000;
+    }
+
+    .menu_bar{ /*Editamos la barra que contiene el botón del menú*/
+        display:block; /*Para que aparezca ya que antes escondimos la barra con display none*/
+        width:100%;
+        background:#ccc;
+        display:flex; /*Para que abarca el 100% del ancho de la ventana*/
+        justify-content:space-between;
+        padding:auto; /*Para hacer más grande la barra*/
+        background:#000; /*Igual que el color de la barra del menu para que todo parezca un solo elemento*/
+        color:#fff;
+        text-decoration:none; /*Para quitar el subrayado de la palabra Menu*/
+        font-weight:bold;
+        font-size:1.56rem;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        box-sizing:border-box;
+    }
+    .menu_bar .bt-menu{
+        margin-left:0.6rem;
+    }
+    .menu_bar .logo{
+        margin-right:0.6rem;
+        margin-top:0.9rem;
+    }
+
+
+
+/*------------------------------------Edición de la sección Main-------------------------------------*/
+.wrapper, .main, .articles{
+    width:100%;
+    height:auto;
+    padding-top:1rem;
+}
+
+/*--------------------------------Edición de política y privacidad-----------------------------------*/
+.politica-privacidad{
+    width:60%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:6rem;
+    margin-bottom:6rem;
+}
+h3, p{
+    font-weight:normal;
+    font-family:normal;
+}
+h3{
+    text-align:center;
+    background:#474b4e;
+    color:#fff;
+    font-size:1.25rem;
+    margin:0.60rem;
+    margin-left:0;
+    margin-bottom:3rem;
+}
+p{
+    font-size:0.94rem;
+    margin-bottom:2rem;
+}
+
+
+/*-----------------------------------------Edición del footer-----------------------------------------*/
+footer{
+    clear:both;
+    width:100%;
+    background:#000;
+    color:#fff;
+}
+.contenedor-footer{
+    width:100%;
+    margin:auto;
+    padding:4%;
+    box-sizing:border-box; /*El contenido se centra en el div*/
+}
+.contenedor-principal{
+    width:100%;
+    display:flex;
+    justify-content:space-around;/*El espacio es mayor que space-around y se alinean mejor a la izquierda en responsive*/
+    flex-flow:wrap; /*Para que cada columna se situe una debajo de otra cuando visualicemos la página en teléfono movil*/
+    margin-bottom:2%;
+    margin-top:2%;
+    box-sizing:border-box;
+}
+
+.columna1{
+    box-sizing:border-box;
+    }
+    .columna1 h1{
+            font-size:1.37rem;
+    }
+    .columna1 p{
+            margin-top:1.25rem;
+            display:flex;
+            flex-flow:wrap;
+    }
+    .columna1 p a{
+            color:#c7c7c7;
+            font-size:1.12rem;
+            text-decoration:none;
+    }
+
+.columna2{
+    box-sizing:border-box;
+    }
+    .columna2 h1{
+            font-size:1.37rem;
+    }
+    .columna2 p{
+            margin-top:1.25rem;
+            display:flex;
+            flex-flow:wrap;
+    }
+    .columna2 p a{
+            color:#c7c7c7;
+            font-size:1.12rem;
+            text-decoration:none;
+    }
+
+.columna3{
+    box-sizing:border-box;
+    }
+    .columna3 h1{
+            font-size:1.37rem;
+    }
+    .columna3 p{
+            margin-top:1.25rem;
+            display:flex;
+            flex-flow:wrap;
+    }
+    .columna3 p a{
+            color:#c7c7c7;
+            font-size:1.12rem;
+            text-decoration:none;
+    }
+
+
+    .subcontenedor{
+            width:100%;
+            display:flex;
+            justify-content:space-around;/*El espacio es mayor que space-around y se alinean mejor a la izquierda en responsive*/
+            flex-flow:wrap; /*Para que cada columna se situe una debajo de otra cuando visualicemos la página en teléfono movil*/
+            margin-bottom:2%;
+            margin-top:2%;
+            box-sizing:border-box;
+    }
+    .columna01{
+        box-sizing:border-box;
+        }
+        .columna01 h1{
+            font-size:1.37rem;
+            color:#000;
+        }
+        .columna01 p{
+            color:#fff;
+            margin-top:1.25rem;
+            display:flex;
+            flex-flow:wrap;
+        }
+    .columna02{
+        box-sizing:border-box;
+        }
+        .columna02 h1{
+            font-size:1.37rem;
+            color:#000;
+        }
+        .columna02 p img{
+            display:block;
+            padding-top:8px;
+            margin-left:8px;
+        }
+    .columna03{
+        box-sizing:border-box;
+        color:#000;
+        }
+        .columna03 h1{
+            font-size:1.37rem;
+            color:#000;
+            }
+        .columna03 p{
+            color:#c7c7c7;
+            margin-top:1.25rem;
+            display:flex;
+            flex-flow:wrap;
+            }
+        .columna03 p a{
+            color:#fff;
+            font-weight:normal;
+            text-decoration:none;
+            }
+
+
+
+
+/*---------------------------------------------REPONSIVE-----------------------------------------------*/
+
+@media screen and (min-width:767px) and (max-width:1024px){
+    /*------------------Edición del header--------------------*/
+    header nav{
+        width:35%;/*Para que no ocupe toda la anchura de la ventana*/
+    }
+}    
+
+
+/*----------------------RESPONSIVE iPAD MINI----------------------*/
+@media screen and (min-width:480px) and (max-width:767px){
+    /*---------------------Edición del header---------------------*/
+    header nav{
+        width:70%;/*Para que no ocupe toda la anchura de la ventana*/
+    }
+
+    /*---------------------Edición del footer---------------------*/
+    .columna1, .columna2, .columna3{
+        width:100%; /*Para que ocupen todo el ancho de la página*/
+        margin-bottom:15%;
+    }
+}
+
+
+/*-----------------------RESPONSIVE TELÉFONO----------------------*/
+@media screen and (max-width:480px){
+    /*-----------------Edición del header-----------------*/
+    header nav{
+        width:80%;/*Para que no ocupe toda la anchura de la ventana*/
+    }
+    header .cabecera a{
+        display:inline-block; /*Para que se sitúen uno a la izquierda del otro*/
+        font-size:0.6rem;
+    }
+    .enlaces-cabecera{
+        margin-top:-9rem;
+    }
+
+    /*--------Edición de política y privacidad------------*/
+    .politica-privacidad{
+        width:80%;
+        margin-top:2rem;
+        margin-bottom:2rem;
+    }
+
+
+    /*-----------------Edición del footer-----------------*/
+    .columna1, .columna2, .columna3{
+        width:100%; /*Para que ocupen todo el ancho de la página*/
+        margin-bottom:15%;/*Para añadir espacio entre las columnas*/
+    }
+    .columna1{
+        margin-top:15%;/*Para que haya un poco más de margen de separaciçon entre las fotos y la primera columna CURSOS*/
+    }
+    .columna3{
+        margin-bottom:5%;/*Para reducir el espacio entre la columna3 y la columna01*/
+    }
+
+    .columna01{
+        width:100%;
+        padding-left:5.5rem;
+        margin-bottom:-2rem;/*Para reducir la separación que hay entre los items del subcontenedor del footer*/
+        text-align:center;
+    }
+    .columna02{
+        margin-bottom:-2rem;/*Para reducir la separación que hay entre los items del subcontenedor del footer*/
+    }
+    .columna03{
+        width:100%;
+        padding-left:8rem;
+        padding-bottom:2rem;/*Para añadir más espacio negro debajo de la columna03*/
+    }
+}
