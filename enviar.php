@@ -1,7 +1,7 @@
 <?php
-    $nombre = $_GET["nombre"];
-    $email = $_GET["email"];
-    $mensaje = $_GET["mensaje"];
+    $nombre = $_POST["nombre"];
+    $email = $_POST["email"];
+    $mensaje = $_POST["mensaje"];
 
     
     $para = "arthur_n09@hotmail.com";
